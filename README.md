@@ -45,7 +45,7 @@ For a comprehensive explanation of the methodology, algorithm design choices, ma
 
 ## 5. Environment Requirements and Execution
 
-To replicate the environment and execute the pipeline, install the dependencies listed in the `requirements.txt` file. Standard libraries such as `os` and `csv` are native to Python and do not require manual installation.
+Developed with Python 3.11. To replicate the environment and execute the pipeline, install the dependencies listed in the `requirements.txt` file. Standard libraries such as `os` and `csv` are native to Python and do not require manual installation.
 
 ```bash
 pip install -r requirements.txt
