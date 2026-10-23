@@ -28,6 +28,7 @@ The data utilized in this project is a subset of the ISIC (International Skin Im
   * `/dataset/images/`: Raw RGB dermoscopic images.
   * `/dataset/masks/`: Expert manual masks for segmentation validation.
   * `/dataset/list.csv`: Ground truth class labels (0 = Benign, 1 = Melanoma).
+* **License:** The images and masks are not covered by this repository's license. They come from the ISIC 2018 Challenge and keep their original licenses (CC0 for Task 1, CC BY-NC 4.0 for Task 3 / HAM10000, by the ViDIR Group, Medical University of Vienna). See `dataset/ATTRIBUTION_1.txt` and `dataset/ATTRIBUTION_2.txt`.
 
 ## 3. Results and Performance Metrics
 
@@ -49,3 +50,11 @@ Developed with Python 3.11. To replicate the environment and execute the pipelin
 
 ```bash
 pip install -r requirements.txt
+```
+
+Then open the notebook (with Jupyter, or directly in VS Code) and run all cells in order (Kernel → Restart & Run All). The dataset is already included, so no extra download is needed.
+
+```bash
+pip install notebook   # only if Jupyter is not installed
+jupyter notebook melanoma_detection.ipynb
+```
