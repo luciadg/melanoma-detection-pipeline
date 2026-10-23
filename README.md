@@ -41,7 +41,7 @@ The classifier was evaluated using Leave-One-Out Cross-Validation (LOOCV). The p
 
 ![Segmentation examples: best, typical and worst case](figures/segmentation_examples.png)
 
-*Best, typical (closest to the median IoU) and worst segmentation. In the worst case, the lesion has diffuse borders and the automatic mask misses its outer part (in blue).*
+*Best, typical (closest to the median IoU) and worst segmentation. In the worst case, the lesion has a diffuse border: the automatic mask keeps its darker core, while the expert mask is a coarse polygon that includes the diffuse area.*
 
 **Limitations:** the dataset is small (51 images) and the segmentation parameters were tuned on these same images, so the metrics are optimistic and should be confirmed on an independent test set.
 
