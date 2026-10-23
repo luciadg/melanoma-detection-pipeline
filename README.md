@@ -32,12 +32,18 @@ The data utilized in this project is a subset of the ISIC (International Skin Im
 
 ## 3. Results and Performance Metrics
 
-The model's generalization capability was rigorously evaluated using Leave-One-Out Cross-Validation (LOOCV). The pipeline achieves the following metrics for the provided dataset:
+The classifier was evaluated using Leave-One-Out Cross-Validation (LOOCV). The pipeline achieves the following metrics for the provided dataset:
 
 * **Segmentation Average IoU (mIoU):** 82.83%
 * **Classification Accuracy:** 90.20%
 * **Sensitivity (Melanoma detection):** 84.21%
 * **Specificity (Benign detection):** 93.75%
+
+![Segmentation examples: best, typical and worst case](figures/segmentation_examples.png)
+
+*Best, typical (closest to the median IoU) and worst segmentation. In the worst case, the lesion has diffuse borders and the automatic mask misses its outer part (in blue).*
+
+**Limitations:** the dataset is small (51 images) and the segmentation parameters were tuned on these same images, so the metrics are optimistic and should be confirmed on an independent test set.
 
 ## 4. Technical Documentation
 
